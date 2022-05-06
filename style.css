@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-x: hidden;
+    position: relative;
+    padding-top: 60px;
+    background-color: black;
+    font-family: 'Kufam';
+   
+}
+
+
+.overlay{
+    min-height: 100vh;
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.divider{
+    height: 4px;
+    width: 100%;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+
+}
+
+input[type='submit']{
+    min-height: 50px;
+    color : radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%) !important;
+    font-weight: 700;
+}
+
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 400px;
+    overflow-x: hidden;
+}
+
+.card .card-body img{
+    max-width: 220px;
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    z-index: 1;
+    transition: 0.5s;
+    animation: UpAndDown 1.5s ease-in-out alternate-reverse infinite;
+   
+}
+.card-body .form {
+    z-index: 200 !important;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes UpAndDown {
+    0%{
+        top: 45px;
+        right: 40px;
+        transform: rotate(0);
+    }
+    
+    100%{
+        top: 60px;
+        right: 400px;
+        transform: rotate(-15deg);
+        opacity: 0.1;
+
+    }
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page Test</title>
+	<link rel="stylesheet" href="src/bootstrap.min.css">
+	<link rel="stylesheet" href="src/dataTables.bootstrap5.min.css">
+	<link rel="stylesheet" href="style.css">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap" rel="stylesheet">
+	<!-- Alerts -->
+	<script src="sweetalert211.js"></script>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="card w-75 mx-auto border-0">
+	<div class="card-header p-4 bg-dark text-center" style="background-color: #0a3458;">
+		<h2 class="text-info mb-3 fs-2">مــركــز أفـــاق للــعــروض الــمــســـرحــيــة</h2>
+		<h2 class="text-light fs-4">(حجز قاعة)</h2>
+	</div>
+	<div class="divider"></div>
+	<div class="card-body p-0 py-3 bg-dark text-center">
+		<img src="cale.png" alt="">
+
+		<div class="form">
+			<h2 class="fs-3 text-light mb-2">رقم القاعة</h2>
+			<input  class="form-control w-25 mx-auto text-center mb-4" type="number" min="1" step="1" value="1" name="hall">
+			<div class="times d-flex flex-column flex-lg-row justify-content-center flex-lg-row-reverse">
+				<div class="st mx-3">
+					<h2 class="fs-3 text-warning mb-2">وقت البداية</h2>
+					<input class="form-control w-100 mx-auto text-center mb-4" value="10:00" type="time" name="start_time">
+				</div>
+				<div class="ed mx-3">
+					<h2 class="fs-3 text-warning mb-2">وقت الإنتهاء</h2>
+					<input class="form-control w-100 mx-auto text-center mb-4" value="21:00" type="time" name="end_time">
+				</div>
+			</div>
+			<h2 class="fs-3 text-light mb-2">التاريخ</h2>
+			<input class="form-control w-25 mx-auto text-center mb-4"  type="date" min="1" step="1" value="1" name="hall">
+			<div class="divider mb-4"></div>
+			<input class="form-control w-25 mx-auto text-center bg-info text-dark border-0" type="submit" value="إحجز الأن" name="sendtwo">
+		</div>
+	</div>
+</div>
+
+
+
+<script src="src/jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+<script src="src/bootstrap.min.js"></script>
+<script src="src/bootstrap.bundle.js"></script>
+<script src="src/jquery.dataTables.min.js"></script>
+<script src="src/popper.js"></script>
+
+</body>
+</html>
