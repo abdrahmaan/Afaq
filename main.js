@@ -40,7 +40,7 @@ const HandleAPI = () => {
         headReq.append("Auth", "beedo");
         headReq.set("Content-Type", "Application/json");
 
-        fetch("http://vipcenter2022.000webhostapp.com/Afaq/AfaqApi.php", {
+        fetch("https://vipcenter2022.000webhostapp.com/Afaq/AfaqApi.php", {
             method: 'POST',
             body: JSON.stringify(obj),
             headers: headReq
